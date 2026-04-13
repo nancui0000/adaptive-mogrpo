@@ -111,7 +111,7 @@ MO-GRPO normalizes rewards at each step so no single objective dominates. We ins
 
 <div align="center">
 
-![Results Table](..\mogrpo-code\figures\results_table.png)
+![Results Table](figures\results_table.png)
 
 ### Pareto Frontier
 
