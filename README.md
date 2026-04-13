@@ -144,7 +144,7 @@ Notable patterns from the training curves:
 
 <div align="center">
 
-![Adaptive vs Fixed](figures\adaptive_vs_fixed.png)
+![Adaptive vs Fixed](figures/adaptive_vs_fixed.png)
 
 This figure isolates the comparison between adaptive (colored, solid) and fixed (gray, dashed) runs:
 
