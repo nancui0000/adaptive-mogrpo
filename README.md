@@ -1,6 +1,6 @@
 # Adaptive MO-GRPO: Taming Reward Hacking in Multi-Objective Code Generation
 
-<div align="center">
+
 
 **The first study of adaptive weight scheduling for multi-objective GRPO in code generation,**
  **demonstrating that curriculum-style reward introduction mitigates reward hacking**
@@ -14,7 +14,7 @@
 
 Existing RL-for-code systems optimize **only correctness**. We add **efficiency** and **brevity** rewards — but naively combining them causes **reward hacking** (the model writes ultra-short but broken code). Our solution: **Adaptive Weight Scheduling** — a curriculum that teaches correctness first, then gradually introduces quality objectives. Result: **code 11% shorter, MBPP +18% better, HumanEval only -2.4% drop**.
 
-<div align="center">
+
 
 |                         | Pass@1 (higher is better) | HumanEval (higher is better) | MBPP (higher is better) | Tokens (lower is better) | Brevity (higher is better) |
 | ----------------------- | ------------------------- | ---------------------------- | ----------------------- | ------------------------ | -------------------------- |
@@ -109,16 +109,16 @@ MO-GRPO normalizes rewards at each step so no single objective dominates. We ins
 
 ### Full Experiment Results
 
-<div align="center">
 
-![Results Table](figures\results_table.png)
+
+![Results Table](figures/results_table.png)
 
 ### Pareto Frontier
 
 The left plot shows the correctness-brevity tradeoff. The right plot shows HumanEval vs MBPP performance. Diamond markers indicate adaptive scheduling; circles indicate fixed weights.
 
 
-![Pareto 2D](figures\pareto_2d.png)
+![Pareto 2D](figures/pareto_2d.png)
 
 **Key observation:** Adaptive 50% (green diamond) sits in the **Pareto-optimal** region — it achieves meaningful brevity improvement while staying close to base model correctness. Fixed-weight configurations (circles) are pushed far left, sacrificing too much correctness.
 
@@ -126,12 +126,12 @@ In the right plot, Adaptive 50% is the **only configuration that simultaneously 
 
 ### 3D Pareto Space
 
-![pareto_3d](figures\pareto_3d.png)
+![pareto_3d](figures/pareto_3d.png)
 
 ### Training Dynamics
 
 
-![Training Dynamics](figures\training_dynamics.png)
+![Training Dynamics](figures/training_dynamics.png)
 
 Notable patterns from the training curves:
 
@@ -142,7 +142,7 @@ Notable patterns from the training curves:
 
 ### Adaptive vs Fixed Weight Comparison
 
-<div align="center">
+
 
 ![Adaptive vs Fixed](figures/adaptive_vs_fixed.png)
 
