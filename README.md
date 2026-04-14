@@ -74,10 +74,6 @@ This confirms the finding by Ichihara et al. (2025) that GRPO is vulnerable to r
 
 Instead of fixed weights, we **gradually introduce** multi-objective rewards:
 
-```
-Phase 1 (steps 0 to warmup):     alpha=1.0, beta=0.0, gamma=0.0     <-- correctness only
-Phase 2 (warmup to end):          alpha=1.0, beta->0.3, gamma->0.15  <-- linear ramp
-```
 ![Pipeline](figures/pipeline.png)
 
 This is analogous to **curriculum learning**: teach the model to write correct code first, then progressively optimize for quality.
