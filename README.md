@@ -77,20 +77,8 @@ Instead of fixed weights, we **gradually introduce** multi-objective rewards:
 ```
 Phase 1 (steps 0 to warmup):     alpha=1.0, beta=0.0, gamma=0.0     <-- correctness only
 Phase 2 (warmup to end):          alpha=1.0, beta->0.3, gamma->0.15  <-- linear ramp
-Weight Schedule Over Training:
-
-            alpha (correctness)
-    1.0  ──────────────────────────────────
-                          beta (efficiency)
-    0.3                   /────────────────
-    0.0  ────────────────/
-                          gamma (brevity)
-    0.15                  /────────────────
-    0.0  ────────────────/
-         |---- Phase 1 ----|--- Phase 2 ---|
-         0              warmup           2000
-                     (50% = step 1000)
 ```
+![Pipeline](figures/pipeline.png)
 
 This is analogous to **curriculum learning**: teach the model to write correct code first, then progressively optimize for quality.
 
