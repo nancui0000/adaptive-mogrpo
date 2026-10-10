@@ -6,7 +6,7 @@
  **demonstrating that curriculum-style reward introduction mitigates reward hacking**
  **while preserving correctness.**
 
-[![Method](https://img.shields.io/badge/Algorithm-GRPO-0366d6?style=for-the-badge)](https://claude.ai/chat/1f79072c-c5be-4bd3-93cf-88e3989edc8e) [![Model](https://img.shields.io/badge/Model-Qwen2.5--Coder--7B-2ea44f?style=for-the-badge)](https://claude.ai/chat/1f79072c-c5be-4bd3-93cf-88e3989edc8e) [![GPU](https://img.shields.io/badge/Hardware-A100--80GB-e4405f?style=for-the-badge)](https://claude.ai/chat/1f79072c-c5be-4bd3-93cf-88e3989edc8e) [![Framework](https://img.shields.io/badge/Framework-TRL_v1.0-ff9900?style=for-the-badge)](https://claude.ai/chat/1f79072c-c5be-4bd3-93cf-88e3989edc8e)
+![Method](https://img.shields.io/badge/Algorithm-GRPO-0366d6?style=for-the-badge) ![Model](https://img.shields.io/badge/Model-Qwen2.5--Coder--7B-2ea44f?style=for-the-badge) ![GPU](https://img.shields.io/badge/Hardware-A100--80GB-e4405f?style=for-the-badge) ![Framework](https://img.shields.io/badge/Framework-TRL_v1.0-ff9900?style=for-the-badge)
 
 ------
 
